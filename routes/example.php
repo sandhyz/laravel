@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 # HELLOWORLD
 Route::get('helloWorld',[example::class, 'helloWorld']);
 # END HELLOWORLD
+
+# PDF TABLE 
+Route::get('pdf', [example::class, 'exportPDF']);
+# END PDF TABLE
