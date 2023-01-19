@@ -179,7 +179,10 @@ return [
         Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
 
         #SNAPPY
-        Barryvdh\Snappy\ServiceProvider::class
+        Barryvdh\Snappy\ServiceProvider::class,
+
+        # MAATWEBSITE
+        Maatwebsite\Excel\ExcelServiceProvider::class,
     ],
 
     /*
@@ -238,6 +241,9 @@ return [
         # SNAPPY
         'PDF' => Barryvdh\Snappy\Facades\SnappyPdf::class,
         'SnappyImage' => Barryvdh\Snappy\Facades\SnappyImage::class,
+
+        # MAATWEBSITE
+        'EXCEL' => Maatwebsite\Excel\Facades\Excel::class,
 
     ],
 
